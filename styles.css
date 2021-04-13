@@ -1,4 +1,8 @@
-
+* {
+	box-sizing: border-box;
+	width: 100%;
+	/*border: solid red;*/
+}
 
 body{
 	background-color: white;
@@ -6,6 +10,7 @@ body{
 	margin: 0;
 	padding: 0;
 	color: #888888;
+
 }
 
 .header {
@@ -55,28 +60,112 @@ body{
 	
 }
 
-.textAndForm{
-	display: grid;
-	grid-template-columns: 50vw;
-	font-size: 12px;
-	width: 500px;
-	margin: 100px 200px;
 
+
+.column {
+  
+  float: left;
+  width: 50%;
 }
 
-.text {
-	/*margin: 70px 0 0 250px;*/
-	width: 80%;
-	line-height: 20px;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
+.left {
+	width: 41%;
+	padding: 70px 0 0 45px;
+	margin: 20px 0 0 200px;
+}
 
+.right {
+	margin: 98px 0 0 -80px;
+	padding-left: 150px;
+}
 
-.text h1{
+.column h1{
 	font-size: 17px;
 	font-weight: normal;
 	letter-spacing: 1px;
 }
 
+.column p {
+	font-size: 12px;
+	width: auto;
+	line-height: 20px;
+	justify-content: center;
+}
+
+.column input {
+	margin: 5px 0 0 0;
+	width: 60%;
+	padding: 5px 0;
+}
+
+.Form {
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+
+.genero input {
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	margin: 5px 5px 0 0;
+}
+
+.genero {
+	 display: inline;
+  position: relative;
+  /*padding-left: 50px;*/
+  margin-bottom: 12px;
+  margin-right: 40px;
+  /*padding-left: 20px;*/
+  cursor: pointer;
+  
+}
+
+.right button{
+	width: 60%;
+	background: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	padding: 10px 25px;
+	/*margin: 10px 20px;*/
+	border-radius: 5px;
+	border: none;
+	border: solid 1px #707070;
+
+}
+
+h2 {
+   width: 68%; 
+   text-align: center; 
+   border-bottom: 1px solid #888888; 
+   line-height: 0.1em;
+   margin: 100px auto; 
+   font-size: 15px;
+} 
+
+h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  .column  {
+    width: 100%;
+  }
+
+  .left {
+  	width: 80%;
+  }
+}
 
 
