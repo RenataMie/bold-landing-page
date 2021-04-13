@@ -13,7 +13,7 @@ function fetchData () {
 				return `
 				<div class="gridProduct">
 					<img src="https:${prod.image}" alt="${prod.name}">
-					<h4>Nome do produto: ${prod.name}</h4>
+					<h4> ${prod.name}</h4>
 					<p> ${prod.description}</p>
 					<p>De: R$23,99</p>
 					<h3>Por: R$19,99</h3>
