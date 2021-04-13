@@ -145,7 +145,7 @@ h2 {
    text-align: center; 
    border-bottom: 1px solid #888888; 
    line-height: 0.1em;
-   margin: 100px auto; 
+   margin: 100px auto 20px auto; 
    font-size: 15px;
 } 
 
@@ -154,7 +154,57 @@ h2 span {
     padding:0 10px; 
 }
 
+.grid-container {
+  width: 73%; 
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
 
+.grid-container div {
+  
+  text-align: center;
+  padding: 20px 0;
+
+  
+
+  
+}
+
+.grid-container img {
+	
+	width: 200px;
+	height: 180px;
+	border: solid 1px #707070;
+}
+
+.grid-container p {
+	text-align: left;
+	font-size: 12px;
+
+}
+
+.grid-container button{
+	width: 200px;
+}
+
+.btn {
+	width: 20%;
+	background: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	padding: 10px 0;
+	margin: 20px 0;
+	border-radius: 5px;
+	
+	border: solid 1px #707070;
+	position: relative;
+	left: 600px;
+
+}
 
 
 
