@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport" />
 	
 	<title>Bold Test</title>
 	<link rel="stylesheet" href="styles.css">
@@ -17,14 +17,14 @@
 	</section>
 
 	<div class="buttonRow">
-			<button>Conheça a Linx</button>
-			<button>Ajude o algorítimo</button>
-			<button>Seus produtos</button>
-			<button>Compartilhe</button>
+			<a href="#"><button>Conheça a Linx</button></a>
+			<a href="#algoritmo"><button>Ajude o algorítimo</button></a>
+			<a href="#products"><button>Seus produtos</button></a>
+			<a href="#share"><button>Compartilhe</button></a>
 	</div>
 
 
-	<div class="row">
+	<div id="algoritmo" class="row">
 
 		<div class="column left">
 		<h1>Ajude o algorítimo a ser mais certeiro</h1>
@@ -74,13 +74,14 @@
 
 <h2><span>Sua seleção especial</span></h2>
 
-<section id="products" class="grid-container">
-<button class="btn" type="">Ainda mais produtos aqui!</button>
-</section>
+<section id="products" class="grid-container"></section>
+
+<button id="Btn" class="btn" type="">Ainda mais produtos aqui!</button>
+
 
 <h2><span>Compartilhe a novidade</span></h2>
 
-<section class="share">
+<section  id="share" class="share">
 	<p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
 	<form action="">
 		<div class="two-col">
@@ -91,7 +92,7 @@
 
 		<div class="col2">
 		<label for="">E-mail:</label><br>
-		<input type="text"><br>
+		<input type="email" id="Email"><br>
 		</div>
 		</div>
 		

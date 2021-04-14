@@ -214,7 +214,7 @@ h2 span {
 	border-radius: 5px;
 	border: solid 1px #707070;
 	position: relative;
-	left: 420px;
+	left: 580px;
 
 }
 
@@ -241,6 +241,7 @@ h2 span {
 .share input {
 	width: 60%;
 	padding: 5px 0;
+	outline: none;
 }
 
 .share button{
@@ -254,6 +255,7 @@ h2 span {
 	border: solid 1px #707070;
 	position: relative;
 	left: 580px;
+	outline: none;
 	
 }
 
@@ -287,7 +289,6 @@ h2 span {
 
 }
 
-
 footer {
 	background: #707070;
 	color: white;
@@ -311,12 +312,183 @@ footer p{
 /*Media queries for phone*/
 
 @media (max-width: 600px) {
-  .column  {
-    width: 100%;
-  }
+
+	.header {
+		height: 52vh;
+		text-align: left;
+		clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% calc(100% - 100px));
+	}
+
+	.header h1 {
+		margin: 0 0 10px 20px;
+		font-size: 45px;
+	}
+
+
+	.header h3 {
+		margin-left: 20px;
+		font-size: 22px;
+	}
+
+	.header p {
+		margin-left: 20px;
+		width: 70%;
+	}
+
+	.buttonRow {
+	margin: -145px 0 0 0;
+	
+}
+
+	.row, .column {
+		width: 100vw;
+	}
 
   .left {
-  	width: 80%;
+  	width: 80vw;
+  	padding: 80px 0 5px 0;
+  	margin: 0 47px;
+  	
   }
+
+  .left h1 {
+  	font-size: 20px;
+  }
+
+  .right {
+  	width: 80vw;
+  	margin: 0 47px;
+  	padding: 0;
+  }
+
+  .column input {
+	
+	width: 100%;
+	
+}
+.genero input {
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	margin: 5px 5px 0 0;
+}
+
+.genero {
+  display: inline;
+  position: relative;
+  margin-bottom: 12px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.right button{
+	width: 100%;
+}
+
+h2 {
+   width: 100%;  
+   font-size: 20px;
+} 
+
+.grid-container {
+  
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-auto-rows: 0; 
+  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow:hidden;
+  margin: 10px 0 20px 50px;
+  padding: 10px;
+  width: 90%;
+  
+  
+}
+
+.grid-container img {
+	width: 180px;
+	/*height: 150px;*/
+	float: left;
+}
+
+.grid-container h4 {
+	position: relative;
+	left: 20px;
+}
+.grid-container p {
+	position: relative;
+	bottom: 50px;
+	left: 20px;
+}
+.grid-container h3 {
+	position: relative;
+	bottom: 50px;
+	left: 20px;
+}
+
+.grid-container button {
+	position: relative;
+	bottom: 50px;
+	left: 98px;
+	width: 210px;
+}
+
+.descricao {
+	visibility: hidden;
+}
+
+.btn {
+	width: 55%;
+	position: relative;
+	left: 130px;
+	bottom: 80px;
+	z-index: 1;
+
+}
+
+.two-col {
+	width: 100vw;
+}
+
+.share p{
+	width: 75%;
+	margin-left: 70px;
+}
+
+.two-col .col1,
+.two-col .col2 {
+    width: 90vw;
+
+}
+
+.share input {
+	width: 90vw;
+
+	
+}
+
+
+.two-col .col1 {
+   
+    margin: 20px;   
+}
+
+.two-col .col2 {
+   
+   margin: 27px;
+    
+}
+
+.share button{
+	width: 60%;
+	position: relative;
+	left: 100px;
+	bottom: 20px;
+	outline: none;
+	
+}
+
+
 }
 
