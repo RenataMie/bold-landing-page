@@ -74,3 +74,15 @@ document.getElementById("Email").addEventListener("input", function (event) {
    document.getElementById("Email").setCustomValidity("");
   }
 });
+
+
+
+
+  window.onresize = function() {
+  if (window.innerWidth > 600 && window.innerWidth < 900) {
+    document.getElementById("change1").innerHTML = 'Olá, Fulano';
+    document.getElementById("change2").innerHTML = 'Fizemos uma lista especial de produtos apenas para você. Isso mesmo: nesta lista temos só produtos que você pode gostar. Seu amigo Ciclano lhe recomendou essa lista especial. Olha só';
+    document.getElementById("Btn").innerHTML= 'Tem muito mais aqui. Vem ver!';
+  } 
+}
+
