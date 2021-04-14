@@ -186,6 +186,14 @@ h2 span {
 
 }
 
+.parcel {
+	text-align: left;
+	font-size: 12px;
+	/*width: 200px;*/
+	padding-left: 25px;
+	padding-right: 20px;
+}
+
 .grid-container h3 {
 	text-align: left;
 	padding-left: 25px;
@@ -321,43 +329,57 @@ footer p{
 
 	.header h1 {
 		margin: 0 0 10px 20px;
-		font-size: 45px;
+		font-size: 35px;
 	}
 
 
 	.header h3 {
 		margin-left: 20px;
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	.header p {
 		margin-left: 20px;
-		width: 70%;
+		width: 85%;
 	}
 
 	.buttonRow {
-	margin: -145px 0 0 0;
+	width: 100vw;
+	margin-top: -150px;
 	
 }
+
+	.buttonRow button {
+	
+	padding: 10px 25px;
+	margin:  10px;
+	font-size: 10px;
+	width: 40vw;
+	
+	
+}
+
 
 	.row, .column {
 		width: 100vw;
 	}
 
   .left {
-  	width: 80vw;
-  	padding: 80px 0 5px 0;
-  	margin: 0 47px;
+  	width: 90vw;
+  	padding: 70px 0 5px 0;
+  	margin: 0 20px;
   	
   }
 
   .left h1 {
-  	font-size: 20px;
+  	font-size: 17px;
+  	letter-spacing: -0.1px;
+
   }
 
   .right {
-  	width: 80vw;
-  	margin: 0 47px;
+  	width: 85vw;
+  	margin: 0 30px;
   	padding: 0;
   }
 
@@ -394,44 +416,63 @@ h2 {
   
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: repeat(4,1fr);
   grid-auto-rows: 0; 
-  overflow-y: hidden;
-  overflow-x: hidden;
-  overflow:hidden;
-  margin: 10px 0 20px 50px;
+  margin: 0 10px;
   padding: 10px;
   width: 90%;
+  z-index: -1;
+}
+
+.grid-container div {
   
+  padding: 0; 
+  margin: 10px 0; 
+  overflow-y: hidden;
+ 
   
 }
 
 .grid-container img {
-	width: 180px;
-	/*height: 150px;*/
+	width: 150px;
+	height: 120px;
 	float: left;
 }
 
 .grid-container h4 {
 	position: relative;
-	left: 20px;
+	bottom: 120px;
+	left: 155px;
+	font-size: 15px;
+	width: 50vw;
 }
 .grid-container p {
 	position: relative;
-	bottom: 50px;
-	left: 20px;
+	bottom: 160px;
+	left: 155px;
+}
+
+.parcel {
+	position: relative;
+	bottom: 170px;
+	left: 145px;
+	margin: 0;
+	padding: 0;
 }
 .grid-container h3 {
 	position: relative;
-	bottom: 50px;
-	left: 20px;
+	bottom: 165px;
+	left: 180px;
+	padding: 0;
+	font-size: 17px;
 }
 
 .grid-container button {
 	position: relative;
-	bottom: 50px;
-	left: 98px;
-	width: 210px;
+	bottom: 140px;
+	left: 38px;
+	width: 38vw;
+	padding: 5px;
 }
 
 .descricao {
@@ -441,10 +482,18 @@ h2 {
 .btn {
 	width: 55%;
 	position: relative;
-	left: 130px;
-	bottom: 80px;
-	z-index: 1;
+	left: 90px;
+	bottom: 160px;
 
+}
+
+.sharetitle {
+	position: relative;
+	bottom: 150px;
+}
+
+.share {
+	margin-top: -150px;
 }
 
 .two-col {
@@ -452,8 +501,8 @@ h2 {
 }
 
 .share p{
-	width: 75%;
-	margin-left: 70px;
+	width: 100vw;
+	/*margin-left: 20px;*/
 }
 
 .two-col .col1,
@@ -476,14 +525,14 @@ h2 {
 
 .two-col .col2 {
    
-   margin: 27px;
+   margin: 20px;
     
 }
 
 .share button{
 	width: 60%;
 	position: relative;
-	left: 100px;
+	left: 80px;
 	bottom: 20px;
 	outline: none;
 	

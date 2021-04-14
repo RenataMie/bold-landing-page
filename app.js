@@ -11,13 +11,13 @@ function fetchData () {
 		const html = data.products
 			.map(prod => {
 				return `
-				<div class="gridProduct">
+				<div>
 					<img src="https:${prod.image}" alt="${prod.name}">
 					<h4> ${prod.name}</h4>
 					<p class="descricao"> ${prod.description}</p>
 					<p>De: R$ ${prod.oldPrice}</p>
 					<h3>Por: R$ ${prod.price}</h3>
-					<p>ou ${prod.installments.count}x de R$ ${prod.installments.value}</p>
+					<span class="parcel">ou ${prod.installments.count}x de R$ ${prod.installments.value}</span>
 					<button>Comprar</button>
 				</div>
 				`;
